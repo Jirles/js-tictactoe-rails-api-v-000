@@ -75,7 +75,7 @@ function attachListeners(){
   //clear button event
   $('#clear').click(function(){
     $('td').html('');
-    $('table').data(''); //remove gameid so things are saved over things
+    $('table').removeData(); //remove gameid so things are saved over things
   });
 };
 
