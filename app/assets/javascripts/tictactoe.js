@@ -52,7 +52,7 @@ function attachListeners(){
     });
   });
 
-  //save game button event 
+  //save game button event
   $('#save').click(function(){
     const boardState = getBoardArray();
     if ($('table').data('gameid')){
@@ -72,6 +72,7 @@ function attachListeners(){
     }
   });
 
+  //clear button event 
   $('#clear').click(function(){
     $('td').html('');
   });
