@@ -49,7 +49,9 @@ function attachListeners(){
   });
 
   $('#save').click(function(){
-    $('td')
+    if ($('table').data('gameid')){
+      //send patch update
+    }
   });
 };
 
