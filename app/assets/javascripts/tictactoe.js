@@ -121,7 +121,6 @@ function setMessage(message){
 function checkWinner(board){
   const stateArray = getBoardArray(); //for some reason board doesn't work here
   let checkResult = false;
-  debugger
   winningCombinations.forEach(function(combo){
     let x = combo.filter(index => stateArray[index] === "X");
     let o = combo.filter(index => stateArray[index] === "O");
