@@ -26,12 +26,12 @@ function attachListeners(){
     // get all of the games
     $.get('/games', function(data){
       // pull out the games array from the json response and display them in an unordered list
-      const games = data["data"];
+      const games = data.data;
       // return if empty
       if (games.length === 0) {
         return;
       }
-      $('#games').html(games.map(game => "<button class='previous-game-btn'>" + game["id"] + "</button><br>"));
+      $('#games').html(games.map(game => "<button class='previous-game-btn'>" + game.id + "</button><br>"));
       // set eventListener for each button
       $('.previous-game-btn').click(function(){
         const id = $(this).html();
