@@ -85,7 +85,7 @@ function doTurn(el){
   //increments value of turn variable
   //invokes updateState()
   updateState(el);
-  //++turn;
+  ++turn;
   //check board
   const currentBoard = getBoardArray();
   if (checkWinner(currentBoard)){
