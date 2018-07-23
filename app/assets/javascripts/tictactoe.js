@@ -69,6 +69,10 @@ function attachListeners(){
       });
     }
   });
+
+  $('#clear').click(function(){
+    
+  });
 };
 
 function doTurn(el){
