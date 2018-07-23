@@ -140,7 +140,6 @@ function checkTie(board){
   //const stateArray = getBoardArray();
   // filter out the filled squares
   const filledSquares = board.filter(square => square === '');
-
   return filledSquares.length === 0 ? true : false
 };
 
