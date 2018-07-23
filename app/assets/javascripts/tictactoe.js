@@ -47,7 +47,7 @@ function attachListeners(){
           // set data-gameid
           $('table').data('gameid', data.data.id);
           // set turn count
-          turn = board.filter(token => token === "X" || token === "O").length;
+          //turn = board.filter(token => token === "X" || token === "O").length;
         });
       });
     });
@@ -85,7 +85,7 @@ function doTurn(el){
   //increments value of turn variable
   //invokes updateState()
   updateState(el);
-  ++turn;
+  //++turn;
   //check board
   const currentBoard = getBoardArray();
   if (checkWinner(currentBoard)){
