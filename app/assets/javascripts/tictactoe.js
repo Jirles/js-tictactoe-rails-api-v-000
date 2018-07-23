@@ -89,12 +89,12 @@ function doTurn(el){
   //check board
   const currentBoard = getBoardArray();
   if (checkWinner(currentBoard)){
-    $('#save').click();
-    $('#clear').click();
+  //  $('#save').click();
+  //  $('#clear').click();
   } else if (checkTie(currentBoard)) {
     setMessage('Tie game.');
-    $('#save').click();
-    $('#clear').click();
+  //  $('#save').click();
+  //  $('#clear').click();
   }
 };
 
