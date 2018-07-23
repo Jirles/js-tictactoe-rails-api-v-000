@@ -47,7 +47,7 @@ function attachListeners(){
           // set data-gameid
           $('table').data('gameid', data.data.id);
           // set turn count
-          turn =
+          turn = board.filter(token => token === "X" || token === "O")
         });
       });
     });
