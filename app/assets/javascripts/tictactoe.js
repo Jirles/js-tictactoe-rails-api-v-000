@@ -63,7 +63,7 @@ function attachListeners(){
       $.post('/games', { 'state': boardState }, function(data){
         // set table data-gameid so next save will send a PATCH req
         $('table').data('gameid', data.data.id);
-      })
+      });
     }
   });
 };
