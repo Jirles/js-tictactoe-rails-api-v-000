@@ -49,9 +49,15 @@ function attachListeners(){
   });
 
   $('#save').click(function(){
+    const boardState = getBoardArray();
     if ($('table').data('gameid')){
       //send patch update
       let id = $('table').data('gameid');
+      $.ajax({
+        url: '/games/' + id,
+        type: 'PATCH',
+        data: {'id': id, 'state': }
+      })
     }
   });
 };
