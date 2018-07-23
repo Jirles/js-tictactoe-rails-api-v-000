@@ -1,6 +1,6 @@
 // Code your JavaScript / jQuery solution here
 $(document).ready(function(){
-  turn = board.filter(token => token === "X" || token === "O").length;
+  turn = $('td').filter(token => token === "X" || token === "O").length;
   winningCombinations = [
     [0,1,2], //top row
     [3,4,5], //mid row
