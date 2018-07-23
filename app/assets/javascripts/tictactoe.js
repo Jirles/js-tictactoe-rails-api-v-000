@@ -1,6 +1,6 @@
 // Code your JavaScript / jQuery solution here
 $(document).ready(function(){
-  turn = 0;
+  turn = ;
   winningCombinations = [
     [0,1,2], //top row
     [3,4,5], //mid row
