@@ -37,6 +37,7 @@ function attachListeners(){
         const id = $(this).html();
         // make another call to the individual game and populate the board
         $.get('/games/' + id.toString(), function(data){
+          debugger
           const board = data["data"]["attributes"]["state"];
           const squares = Object.values($('td')).slice(0, 9); //turn jquery obj to array
           for (space in board) {
