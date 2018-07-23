@@ -59,6 +59,10 @@ function attachListeners(){
         data: {'id': id, 'state': boardState},
         success: function(){ console.log('PATCH successful')}
       });
+    } else {
+      $.post('/games', { 'state': boardState }, function(data){
+        // set table data-gameid so next save will send a PATCH req
+      })
     }
   });
 };
