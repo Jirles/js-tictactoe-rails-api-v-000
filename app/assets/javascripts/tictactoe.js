@@ -89,7 +89,7 @@ function doTurn(el){
   ++turn;
   //check board
   const currentBoard = getBoardArray();
-  if (checkWinner(currentBoard) || checkTie(currentBoard)){
+  if ( checkWinner(currentBoard) || checkTie(currentBoard) ) {
     $('#save').click();
     $('#clear').click();
   } //else if (checkTie(currentBoard)) {
