@@ -94,7 +94,6 @@ function doTurn(el){
     setMessage('Tie game.');
     $('#save').click();
     $('#clear').click();
-    //resetGame();
   }
 };
 
