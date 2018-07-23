@@ -144,12 +144,6 @@ function checkTie(board){
   return filledSquares.length === 0 ? true : false
 };
 
-function resetGame(){
-//reset game board
-  $('td').html('');
-  turn = 0;
-};
-
 
 // each new game sets turn to 0 and clears board, initiated with
 // save game on first try will set data-gameID attr on save button
