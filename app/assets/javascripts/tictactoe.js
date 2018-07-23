@@ -75,6 +75,7 @@ function attachListeners(){
   //clear button event 
   $('#clear').click(function(){
     $('td').html('');
+    $('table').data('');
   });
 };
 
