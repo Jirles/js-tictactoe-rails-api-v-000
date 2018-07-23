@@ -88,7 +88,7 @@ function doTurn(el){
   //check board
   const currentBoard = getBoardArray();
   if (checkWinner(currentBoard)){
-    resetGame();
+    $('#save').click();
   } else if (checkTie(currentBoard)) {
     setMessage('Tie game.');
     resetGame();
