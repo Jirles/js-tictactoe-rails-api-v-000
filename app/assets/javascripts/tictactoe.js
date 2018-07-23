@@ -22,6 +22,7 @@ function attachListeners(){
     $(this).html() ? e.preventDefault() : doTurn(this);
   });
 
+  // previous games button event
   $('#previous').click(function(){
     // get all of the games
     $.get('/games', function(data){
