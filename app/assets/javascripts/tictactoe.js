@@ -136,12 +136,6 @@ function checkWinner(board){
   return checkResult;
 };
 
-function resetGame(){
-  //reset game board
-  $('td').html('');
-  turn = 0;
-};
-
 function checkTie(board){
   //const stateArray = getBoardArray();
   // filter out the filled squares
