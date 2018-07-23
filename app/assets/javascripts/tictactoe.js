@@ -20,6 +20,7 @@ function attachListeners(){
   // adds a token to the board
   $('td').click(function(e){
     $(this).html() ? e.preventDefault() : doTurn(this);
+    if ()
   });
 
   // previous games button event
@@ -88,14 +89,14 @@ function doTurn(el){
   ++turn;
   //check board
   const currentBoard = getBoardArray();
-  if (checkWinner(currentBoard)){
+  if (checkWinner(currentBoard) || checkTie(currentBoard)){
+    $('#save').click();
+    $('#clear').click();
+  } //else if (checkTie(currentBoard)) {
+    //setMessage('Tie game.');
   //  $('#save').click();
   //  $('#clear').click();
-  } else if (checkTie(currentBoard)) {
-    setMessage('Tie game.');
-  //  $('#save').click();
-  //  $('#clear').click();
-  }
+  //}
 };
 
 function getBoardArray(){
