@@ -56,7 +56,8 @@ function attachListeners(){
       $.ajax({
         url: '/games/' + id,
         type: 'PATCH',
-        data: {'id': id, 'state': }
+        data: {'id': id, 'state': boardState},
+        success: function(){ console.log('PATCH successful.')}
       })
     }
   });
