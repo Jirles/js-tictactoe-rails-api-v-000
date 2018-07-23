@@ -52,6 +52,7 @@ function attachListeners(){
     });
   });
 
+  //save game button event 
   $('#save').click(function(){
     const boardState = getBoardArray();
     if ($('table').data('gameid')){
