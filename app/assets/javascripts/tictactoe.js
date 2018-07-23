@@ -94,8 +94,8 @@ function checkWinner(board){
   let checkResult = false;
   debugger
   winningCombinations.forEach(function(combo){
-    let x = combo.filter(index => board[index] === "X");
-    let o = combo.filter(index => board[index] === "O");
+    let x = combo.filter(index => stateArray[index] === "X");
+    let o = combo.filter(index => stateArray[index] === "O");
     if (x.length === 3) {
       setMessage("Player X Won!");
       checkResult = true;
