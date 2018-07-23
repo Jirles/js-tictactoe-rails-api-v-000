@@ -43,6 +43,8 @@ function attachListeners(){
             //need to use jquery call to use html()
             $(squares[space]).html(board[space]);
           }
+          // set data-gameid
+          $('table').data('gameid', data["data"]["data"])
         });
       });
     });
