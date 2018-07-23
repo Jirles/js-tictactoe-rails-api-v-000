@@ -51,6 +51,7 @@ function attachListeners(){
   $('#save').click(function(){
     if ($('table').data('gameid')){
       //send patch update
+      let id = $('table').data('gameid');
     }
   });
 };
