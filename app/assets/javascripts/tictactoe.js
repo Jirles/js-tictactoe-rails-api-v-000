@@ -76,7 +76,7 @@ function attachListeners(){
   //clear button event
   $('#clear').click(function(){
     $('td').html('');
-    turn = 0;
+    turn = board.filter(token => token === "X" || token === "O").length;;
     $('table').removeData(); //remove gameid so a new game won't be saved over an old one
   });
 };
