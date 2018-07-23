@@ -92,7 +92,9 @@ function doTurn(el){
     $('#clear').click();
   } else if (checkTie(currentBoard)) {
     setMessage('Tie game.');
-    resetGame();
+    $('#save').click();
+    $('#clear').click();
+    //resetGame();
   }
 };
 
