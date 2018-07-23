@@ -57,8 +57,8 @@ function attachListeners(){
         url: '/games/' + id,
         type: 'PATCH',
         data: {'id': id, 'state': boardState},
-        success: function(){ console.log('PATCH successful.')}
-      })
+        success: function(){ console.log('PATCH successful')}
+      });
     }
   });
 };
