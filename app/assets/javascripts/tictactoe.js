@@ -71,7 +71,7 @@ function attachListeners(){
   });
 
   $('#clear').click(function(){
-    
+    $('td').html('');
   });
 };
 
