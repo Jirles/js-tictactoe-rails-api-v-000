@@ -45,7 +45,7 @@ function attachListeners(){
             $(squares[space]).html(board[space]);
           }
           // set data-gameid
-          $('table').data('gameid', data["data"]["id"]);
+          $('table').data('gameid', data.data.id);
         });
       });
     });
